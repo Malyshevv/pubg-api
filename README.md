@@ -4,7 +4,7 @@
 ### its not full list methods pubg api if you need more method please view this  - https://documentation.pubg.com/en/introduction.html
 
 ```$platform = $player['Platform'];
-$nickname = $player['nickname'];
+$nickname = str_replace(' ','%20',$player['nickname']);
             
 $pubgAPI = new pubgAPI();
 $accountPlayer = $pubgAPI->getPlayerData($platform,$nickname);
