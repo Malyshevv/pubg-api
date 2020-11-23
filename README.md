@@ -1,7 +1,7 @@
 # pubg-api
 
 # API usage example
-
+### its not full list methods pubg api if you need more method please view this  - https://documentation.pubg.com/en/introduction.html
 
 ```$platform = $player['Platform'];
 $nickname = $player['nickname'];
