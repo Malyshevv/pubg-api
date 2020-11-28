@@ -5,7 +5,7 @@
 
 ```
 $platform = $player['Platform']; (xbox/psn/steam..)
-$nickname = str_replace(' ','%20',$player['nickname']);
+$nickname = htmlspecialchars($player['nickname']);
             
 $pubgAPI = new pubgAPI();
 $accountPlayer = $pubgAPI->getPlayerData($platform,$nickname);
